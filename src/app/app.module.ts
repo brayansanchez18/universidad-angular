@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PersonasComponent } from './personas/personas.component';
+import { PersonaComponent } from './persona/persona.component';
 
 @NgModule({
   declarations: [
     // TODO: REGISTRAMOS EL COMPONENTE QUE CREAMOS DE PERSONAS
-    AppComponent,PersonasComponent
+    AppComponent,PersonasComponent, PersonaComponent
   ],
   imports: [
     BrowserModule
