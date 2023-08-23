@@ -9,11 +9,10 @@ import { Component } from '@angular/core';
 
   selector: 'app-personas',
   // DEFINIR AHORA UN ARCHIVO PARA INCLUIR EL TEXTO HTML QUE QUEREMOS AGREGAR EN ESTE COMPONENTE
-  // templateUrl: './personas.component.html'
+  templateUrl: './personas.component.html',
+  styleUrls: ['./personas.component.css']
   // TODO:TAMBIEN PODEMOS CREAR UN COMPONENTE EN LINEA SI LA INFORMACION ES BREVE
-  template: `<h1>Listado de personas</h1>
-            <app-persona></app-persona>
-            <app-persona></app-persona>`
+  // template: `<h1>Listado de personas</h1><app-persona></app-persona><app-persona></app-persona>`
 })
 
 export class PersonasComponent {
