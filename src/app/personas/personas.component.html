@@ -5,11 +5,16 @@
     <div class="col"></div>
       <h1>Listado de personas</h1>
       <button class="btn btn-primary" [disabled]="deshabilitar" (click)="agregarPersona()">Agregar Persona</button>
-      <p>{{ mensaje }}</p>
+      <p *ngIf="mostrar;else sinPersona">{{ mensaje }} con el titulo de {{ titulo }}</p>
+
+      <ng-template #sinPersona>
+        <p>no se ha agregado ninguna persona</p>
+      </ng-template>
+
       <app-persona></app-persona>
 
       <label>Titulo Persona:</label>
-      <input type="text" class="form-control" (input)="modificarTitulo($event)">
+      <input type="text" class="form-control" [(ngModel)]="titulo">
       {{ titulo }}
   </div>
 </div>
